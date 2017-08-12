@@ -14,6 +14,12 @@ class Mycog:
     async def test(self):
         """This does stuff!"""
 
+        annie = Champion(name="Annie")
+        await self.bot.say(annie.name)
+
+        for spell in annie.spells:
+            print(spell.name, spell.keywords)
+
         summoner = cass.get_summoner(name="BubblyBryan")
         await self.bot.say("{name} is a level {level} summoner on the {region} server.".format(name=summoner.name, level=summoner.level, region=summoner.region))
 
