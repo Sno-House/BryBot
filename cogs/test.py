@@ -4,6 +4,7 @@ from cassiopeia import Summoner
 
 def print_summoner(name: str, region: str):
     summoner = Summoner(name=name, region=region)
+
     print("Name:", summoner.name)
     print("ID:", summoner.id)
     print("Account ID:", summoner.account.id)
